@@ -2,7 +2,7 @@
 % Please edit documentation in R/main.R
 \name{UCR.OffenseNames}
 \alias{UCR.OffenseNames}
-\title{Uniform Crime Report Column Name Fixer}
+\title{Uniform Crime Report Offenses and Clearances Column Name Fixer}
 \usage{
 UCR.OffenseNames(UCR_dataset)
 }
@@ -17,14 +17,15 @@ as per the UCR "Offenses Known and Clearance by Arrest" codebook for years
 1998-2014
 }
 \description{
-Uniform Crime Report Column Name Fixer
+Uniform Crime Report Offenses and Clearances Column Name Fixer
 }
 \examples{
 # This is an example data.frame with the same column names
-# as the real UCR dataset.
+# as the real UCR offenses and clearances, dataset.
 example <- data.frame(V1 = 1:10, V2 = 2:11, V8 = "example")
 names(example)
 example <- UCR.OffenseNames(example)
 names(example)
+
 }
 
