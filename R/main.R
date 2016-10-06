@@ -170,11 +170,3 @@ UCR.LEOKANames <- function(UCR_dataset) {
 #' }
 #' @source \url{http://www.icpsr.umich.edu/icpsrweb/NACJD/studies/36395}
 "LEOKA_ColNames_1998_2014"
-
- library(readstata13)
- setwd("C:/Users/user/Dropbox/Consent Decrees/consentDecree/UCR_data/leoka")
- leoka_2012 <- read.dta13("leoka_2012.dta")
- leoka_2012 <- UCR.LEOKANames(leoka_2012)
-
- leoka_2013 <- read.dta13("leoka_2013.dta")
- leoka_2013 <- UCR.LEOKANames(leoka_2013)
